@@ -1,10 +1,10 @@
 # Network Intrusion Detection System (NIDS) 🛡️
-**Collaborative Research Project | Machine Learning & Cybersecurity**
+**Collaborative Research Project |Btech Final Year Project | Machine Learning & Cybersecurity**
 
 ## 👥 Authors & Contributions
 This project was a joint development effort between:
-* **Ritish Bhatt** (https://github.com/RitishB05)
-* **Bibhuti** (https://github.com/VESUVIUS9)
+* **Ritish Bhatt** 
+* **Bibhuti** 
 
 ### Author Contribution Breakdown:
 * **Ritish Bhatt**: Engineered the core Machine Learning pipeline, including Exploratory Data Analysis (EDA), feature scaling, and the implementation of Random Forest and XGBoost classifiers.
