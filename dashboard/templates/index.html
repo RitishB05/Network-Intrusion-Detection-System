@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Traffic Classifier</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        label { display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Network Traffic Classifier</h1>
+    <form action="/classify" method="POST">
+        <label>Duration (dur): <input type="number" step="any" name="dur" required></label>
+        <label>Protocol (proto): <input type="text" name="proto" required></label>
+        <label>Service (service): <input type="text" name="service" required></label>
+        <label>Source Bytes (sbytes): <input type="number" name="sbytes" required></label>
+        <label>Destination Bytes (dbytes): <input type="number" name="dbytes" required></label>
+        <input type="submit" value="Classify">
+    </form>
+    <br>
+    <a href="/simulate">Start Simulation</a>
+</body>
+</html>

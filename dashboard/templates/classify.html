@@ -1,0 +1,28 @@
+<!--Classify.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: {% if prediction == 'Attack' %}red{% else %}green{% endif %}; }
+        a { color: #007BFF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .debug-info { background-color: #f5f5f5; padding: 10px; margin-top: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Prediction: {{ prediction }}</h1>
+    <p>Traffic classified as <strong>{{ prediction }}</strong>.</p>
+    <a href="/">Try Again</a>
+
+    <!-- Debug Information -->
+    <div class="debug-info">
+        <h3>Debug Information</h3>
+        <p><strong>Input Data:</strong></p>
+        <pre>{{ input_data }}</pre>
+        <p><strong>Preprocessed Data:</strong></p>
+        <pre>{{ preprocessed_data }}</pre>
+    </div>
+</body>
+</html>
